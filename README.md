@@ -6,7 +6,7 @@ A learning project in which I will improve. This tunnel will be used with IPsec 
 - ipv4 and ipv6
 - good match for ipsec
 - later i will work on udp
-- 
+
 **usage**
   
  - Server
@@ -20,6 +20,8 @@ A learning project in which I will improve. This tunnel will be used with IPsec 
    ipv4 amd64 : ./client_amd64 -local 5050 -target KharejIPV4:800 -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
    
    ipv6 amd64 : ./client_amd64 -local 5051 -target [KharejIPV6]:800 -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
+
+- you can disable encrypt or tcpnodelay by simply removing them.
 
 **Generating AES KEY**
 
