@@ -45,7 +45,7 @@ chmod +x client_amd64
   
 openssl rand -hex 16  or openssl rand -hex 24  or openssl rand -hex 32
 
-- too many open files [ulimit]
+- too many open files error [ulimit]  + reset/kill timer 
 
 ```
 ulimit -u  #displaying the maximum user process
