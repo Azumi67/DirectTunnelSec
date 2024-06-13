@@ -1,6 +1,8 @@
 
 # kharej_config.toml
-
+#8080 : tunnel port 
+#9090 : config port
+----------------------
 listen_port = 8080
 local_address = "localhost:9090"
 tcp_no_delay = true
