@@ -30,7 +30,9 @@ chmod +x client_amd64
 - Server
    
   ipv4 amd64 : ./server_arm64 -listen=800 -local=":5050" -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
+  
   ipv6 amd64 : ./server_arm64 -listen=800 -local="[::]:5050" -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
+  
  - Client
    
    ipv4 amd64 : ./client_amd64 -local 5050 -target KharejIPV4:800 -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
