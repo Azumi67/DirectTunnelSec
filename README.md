@@ -44,3 +44,16 @@ chmod +x client_amd64
 **Generating AES KEY**
   
 openssl rand -hex 16  or openssl rand -hex 24  or openssl rand -hex 32
+
+- too many open files [ulimit]
+
+```
+ulimit -u  #displaying the maximum user process
+ulimit -f  #displaying the maximum file size a user can have
+ulimit -n
+ulimit -n <new input> for example : ulimit -n 65536
+nano /etc/security/limits.conf
+*         hard    nofile      <your input>
+*         soft    nofile      <your input>
+
+```
