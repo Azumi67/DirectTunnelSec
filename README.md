@@ -4,24 +4,35 @@ A learning project in which I will improve. This tunnel will be used with IPsec 
 - tcp no delay
 - buffer size
 - ipv4 and ipv6
+- toml config file
 - good match for ipsec [https://github.com/Azumi67/6TO4-GRE-IPIP-SIT]
 - later i will work on udp
+
+**install**
+
+```
+apt update -y
+apt install wget -y
+apt install unzip -y
+wget https://github.com/Azumi67/DirectTunnelSec/releases/download/v1.002/amd64.zip
+unzip amd64.zip -d /root/dtunnel
+```
+
+**toml file**
+
+- There are server and client configurations examples in explie directory
+- look for examples there
 
 **usage**
   
  - Server
    
-  ipv4 amd64 : ./server_arm64 -listen=800 -local=":5050" -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
-
-  ipv6 amd64 : ./server_arm64 -listen=800 -local="[::]:5050" -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
+  ipv4/ipv6 amd64 : ./server_amd64 -config kharej_config.toml
 
  - Client
    
-   ipv4 amd64 : ./client_amd64 -local 5050 -target KharejIPV4:800 -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
+   ipv4/ipv6 amd64 : ./client_amd64 -config iran_config.toml
    
-   ipv6 amd64 : ./client_amd64 -local 5051 -target [KharejIPV6]:800 -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
-
-- you can disable encrypt or tcpnodelay by simply removing them.
 
 **Generating AES KEY**
 
