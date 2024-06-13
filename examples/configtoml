@@ -1,6 +1,8 @@
 
 #iran_config.toml
-
+#8080 : tunnel port 
+#9090 : config port
+----------------------
 local_port = 9090
 target_address = "kharejipv4:8080"
 tcp_no_delay = true
