@@ -1,0 +1,27 @@
+
+# kharej_config.toml
+
+listen_port = 8080
+local_address = "localhost:9090"
+tcp_no_delay = true
+encrypt = true
+key = "0123456789abcdef0123456789abcdef"  AES key example
+buffer_size = 8192
+
+#ipv6
+
+listen_port = 8080
+local_address = "[::]:9090"
+tcp_no_delay = true
+encrypt = true
+key = "0123456789abcdef0123456789abcdef"  # AES key example
+buffer_size = 8192
+
+
+# ipv6 no encryption
+
+listen_port = 8080
+local_address = "[::]:9090"
+tcp_no_delay = true
+encrypt = false
+buffer_size = 8192
