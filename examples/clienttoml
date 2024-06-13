@@ -1,0 +1,32 @@
+
+#iran_config.toml
+#8080 : tunnel port 
+#9090 : config port
+----------------------
+local_port = 9090
+target_address = "kharejipv4:8080"
+tcp_no_delay = true
+encrypt = true
+key = "0123456789abcdef0123456789abcdef"  # AES key example
+buffer_size = 65535
+
+
+#ipv6
+
+  
+local_port = 9090
+target_address = "[kharejipv6]:8080"
+tcp_no_delay = true
+encrypt = true
+key = "0123456789abcdef0123456789abcdef"  # AES key example
+buffer_size = 65535
+
+
+#ipv6 no encryption
+
+  
+local_port = 9090
+target_address = "[kharejipv6]:8080"
+tcp_no_delay = true
+encrypt = false
+buffer_size = 65535
