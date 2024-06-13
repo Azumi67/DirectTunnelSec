@@ -39,6 +39,7 @@ chmod +x client_amd64
    
    ipv6 amd64 : ./client_amd64 -local 5051 -target [KharejIPV6]:800 -noDelay=true -encrypt -key ATMZE1uD7dmgNDnERJLSFw== -buffer 65535
 
+- no ecryption : just remove -encrypt & - key
 
 **Generating AES KEY**
   
